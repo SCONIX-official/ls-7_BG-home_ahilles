@@ -1,0 +1,558 @@
+/*=============================ШРИФТЫ==============================================================*/
+
+/* &display=swap&subset=cyrillic-ext */
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonds/Roboto-Regular.woff2') format('woff2'),
+		url('../fonds/Roboto-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonds/Roboto-Black.woff2') format('woff2'),
+		url('../fonds/Roboto-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonds/Roboto-Bold.woff2') format('woff2'),
+		url('../fonds/Roboto-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ----------------------------------------------------------- */
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: url('../fonds/CormorantGaramond-Bold.woff2') format('woff2'),
+		url('../fonds/CormorantGaramond-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: url('../fonds/CormorantGaramond-Italic.woff2') format('woff2'),
+		url('../fonds/CormorantGaramond-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: url('../fondsCormorantGaramond-Regular.woff2') format('woff2'),
+		url('../fondsCormorantGaramond-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+
+/*================ОБНУЛЕНИЕ СТИЛЕЙ========================================================================*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px;
+	/* по умолчанию */
+}
+
+body {
+	line-height: 1;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/*====================РАБОЧАЯ ОБЛАСТЬ=========================================================================================================*/
+
+body {
+	font-family: 'Cormorant Garamond';
+	background: url("../img/fon.jpeg") 0 0/cover no-repeat fixed;
+}
+
+.wrapper {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main {}
+
+.block {
+	margin: 30px 0px 50px 0px;
+}
+
+.block-items {
+	max-width: 1000px;
+	margin: 0px auto;
+	box-shadow: 0 0 50px hsla(0, 0%, 100%);
+	border-radius: 0px 50px 0px 50px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 1px solid #000;
+}
+
+.block-items-text {
+	font-size: 22px;
+	color: rgb(0, 0, 0);
+	font-style: italic;
+	text-transform: uppercase;
+	padding: 20px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+.block2 {
+	max-width: 1000px;
+	height: 350px;
+	margin: 50px auto;
+	border: 1px solid #000;
+	background: url("../img/02.jpg") 0 0/cover no-repeat fixed;
+	border-radius: 20px;
+}
+
+.block2-items-text {
+	font-size: 40px;
+	font-style: italic;
+	padding: 15px;
+	text-transform: uppercase;
+	color: hsla(0, 0%, 100%, 0.7);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.block3 {
+	max-width: 1000px;
+	height: 250px;
+	margin: 50px auto;
+	border: 1px solid #000;
+	background: url("../img/02.jpg") 0 0/cover no-repeat;
+	border-radius: 20px;
+}
+
+.block3-items-text {
+	font-size: 40px;
+	font-style: italic;
+	padding: 15px;
+	text-transform: uppercase;
+	color: hsla(0, 0%, 100%, 0.7);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+.block4 {
+	max-width: 1000px;
+	height: 250px;
+	margin: 0px auto;
+	border: 1px solid #000;
+	background: url("../img/02.jpg") 0 0/cover no-repeat local;
+	border-radius: 20px;
+	overflow: scroll;
+}
+
+.block4-items-text {
+	font-size: 40px;
+	font-style: italic;
+	padding: 15px;
+	text-transform: uppercase;
+	color: hsla(0, 0%, 100%, 0.7);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+.block5 {
+	max-width: 1000px;
+	height: 250px;
+	margin: 50px auto;
+	border: 1px solid #000;
+	background: radial-gradient(ellipse at center, rgba(35, 53, 104, 1) 8%, rgba(224, 217, 31, 1) 18%, rgba(136, 191, 232, 1) 35%, rgba(206, 70, 138, 1) 43%, rgba(206, 70, 138, 1) 43%, rgba(74, 224, 126, 1) 47%, rgba(224, 217, 31, 1) 59%, rgba(63, 72, 193, 1) 67%, rgba(74, 224, 126, 1) 84%, rgba(224, 217, 31, 1) 94%);
+	border-radius: 20px;
+	opacity: 0.5;
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+.block6 {
+	max-width: 1000px;
+	height: 350px;
+	margin: 50px auto;
+	border: 1px solid #000;
+	background: url("../img/01.jpg") 50% no-repeat, url("../img/01.jpg") bottom right no-repeat, url("../img/01.jpg") 30px 30px no-repeat;
+	border-radius: 20px;
+	opacity: 0.5;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.block7 {
+	max-width: 1000px;
+	height: 350px;
+	margin: 50px auto;
+	border: 1px solid #000;
+	background: url("../img/01.jpg") 0 0/100% 100% no-repeat;
+	border-radius: 20px;
+	opacity: 0.5;
+}
+
+.block7-items {}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.block8 {
+	max-width: 1000px;
+	margin: 50px auto;
+}
+
+.list li {
+	font-size: 18px;
+	padding: 10px 35px 10px 0px;
+	font-style: italic;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.list li {
+	background: url("../img/check.png") top right no-repeat;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+.block9 {
+	max-width: 1000px;
+	margin: 50px auto;
+}
+
+.list-2 li {
+	font-size: 18px;
+	font-style: italic;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.list-2 li {
+	background: url("../img/check.png") top left no-repeat;
+	padding: 10px 0px 10px 35px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.top-notch-service {
+	max-width: 1400px;
+	margin: 180px auto;
+	font-family: "Roboto";
+	/*border-radius: 15px;*/
+	box-shadow: 0 0 50px hsla(0, 0%, 100%);
+	background: url("../img/07.png") 0 0/cover fixed no-repeat;
+}
+
+.service h2 {
+	max-width: 700px;
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 56px;
+	text-align: left;
+	color: rgba(255, 255, 255);
+	padding: 280px 0px 48px 180px;
+}
+
+.batton {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+	display: inline-block;
+	width: 211px;
+	height: 48px;
+	color: #fff;
+	text-transform: uppercase;
+	background: #C40B0B url("../img/09.png") right no-repeat;
+	padding: 11px 0px 10px 15px;
+	margin: 0px 0px 210px 180px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+.block10 {
+	max-width: 1400px;
+	margin: 50px auto;
+	font-family: "Roboto";
+	box-shadow: 0 0 50px hsla(0, 0%, 100%);
+}
+
+.block10-item {
+	background-color: #02133C;
+}
+
+.block10-item-image {}
+
+.image-10 {
+	margin: -80px 0px 0px 730px;
+}
+
+.block10-item-logo {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	text-align: left;
+	color: #D5D5D5;
+	max-width: 550px;
+	margin: -90px 0px 0px 70px;
+}
+
+.block10-item-logo {
+	background: url("../img/11.png") top left no-repeat;
+	padding: 0px 0px 0px 50px;
+}
+
+.block10-item-logo p {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 42px;
+	text-align: left;
+	color: #fff;
+	margin: 0px 0px 110px 0px;
+}
+
+
+.block10-item-services {
+	padding: 30px 0px 0px 0px;
+}
+
+.block10-item-services-container {
+	padding: 0px 0px 50px 0px;
+}
+
+.oil {
+	max-width: 237px;
+	height: 80px;
+	display: inline-block;
+	background: url("../img/12.png") left no-repeat;
+	padding: 0px 0px 0px 90px;
+	margin: 0px 0px 0px 110px;
+}
+
+.oil-text {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 42px;
+	text-align: left;
+	color: #C40B0B;
+}
+
+.oil-text span {
+	font-size: 16px;
+	font-weight: 400;
+	display: block;
+	line-height: 24px;
+	text-align: left;
+	color: #F5F5F5;
+	padding: 15px 0px 0px 0px;
+}
+
+/* ------------------------------------ */
+.transmission {
+	max-width: 237px;
+	height: 80px;
+	display: inline-block;
+	background: url("../img/13.png") left no-repeat;
+	padding: 0px 0px 0px 90px;
+	margin: 0px 0px 0px 110px;
+}
+
+.transmission-text {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 42px;
+	text-align: left;
+	color: #C40B0B;
+}
+
+.transmission-text span {
+	font-size: 16px;
+	font-weight: 400;
+	display: block;
+	line-height: 24px;
+	text-align: left;
+	color: #F5F5F5;
+	padding: 15px 0px 0px 0px;
+}
+
+/* -------------------------------------- */
+.alignments {
+	max-width: 237px;
+	height: 80px;
+	display: inline-block;
+	background: url("../img/14.png") left no-repeat;
+	padding: 0px 0px 0px 90px;
+	margin: 0px 0px 0px 110px;
+}
+
+.alignments-text {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 42px;
+	text-align: left;
+	color: #C40B0B;
+}
+
+.alignments-text span {
+	font-size: 16px;
+	font-weight: 400;
+	display: block;
+	line-height: 24px;
+	text-align: left;
+	color: #F5F5F5;
+	padding: 15px 0px 0px 0px;
+}
+
+/* ----------------------------------------- */
+.engines {
+	max-width: 237px;
+	height: 80px;
+	display: inline-block;
+	background: url("../img/15.png") left no-repeat;
+	padding: 0px 0px 0px 90px;
+	margin: 0px 0px 0px 110px;
+}
+
+.engines-text {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 42px;
+	text-align: left;
+	color: #C40B0B;
+}
+
+.engines-text span {
+	font-size: 16px;
+	font-weight: 400;
+	display: block;
+	line-height: 24px;
+	text-align: left;
+	color: #F5F5F5;
+	padding: 15px 0px 0px 0px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+.service-hours {
+	max-width: 100%;
+	margin: 0px 0px 0px 1100px;
+	padding: 0px 0px 0px 0px;
+	font-family: "Roboto";
+}
+
+.car-repair {
+	max-width: 240px;
+}
+
+.contact h3 {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 22px;
+	text-align: left;
+	color: #4B4B4B;
+	margin: 0px 0px 28px 0px;
+}
+
+.locality-link {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: left;
+	color: #4B4B4B;
+	margin: 0px 0px 16px 0px;
+	background: url("../img/03.png") top left no-repeat;
+	padding: 0px 0px 0px 18px;
+	display: inline-block;
+}
+
+.phone-link {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: left;
+	color: #4B4B4B;
+	margin: 0px 0px 16px 0px;
+	background: url("../img/04.png") top left no-repeat;
+	padding: 0px 0px 0px 18px;
+	display: inline-block;
+}
+
+.mail-link {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: left;
+	color: #4B4B4B;
+	margin: 0px 0px 16px 0px;
+	background: url("../img/05.png") top left no-repeat;
+	padding: 0px 0px 0px 18px;
+	display: inline-block;
+}
+
+.time-link {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: left;
+	color: #4B4B4B;
+	margin: 0px 0px 40px 0px;
+	background: url("../img/06.png") top left no-repeat;
+	padding: 0px 0px 0px 18px;
+	display: inline-block;
+}
